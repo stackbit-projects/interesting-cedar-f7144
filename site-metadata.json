@@ -12,11 +12,6 @@
     "palette": "green",
     "main_menu": [
         {
-            "title": "Store",
-            "url": "/store",
-            "style": "link"
-        },
-        {
             "title": "About",
             "url": "/about",
             "style": "link"
