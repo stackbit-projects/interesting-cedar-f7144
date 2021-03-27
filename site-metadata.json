@@ -10,12 +10,6 @@
     "snipcart_api_key": "",
     "footer_text": "Copyright 2021 Planty Inc. All rights reserved.",
     "palette": "green",
-    "main_menu": [
-        {
-            "title": "About",
-            "url": "/about",
-            "style": "link"
-        }
-    ],
+    "main_menu": [],
     "title": "Planty"
 }
