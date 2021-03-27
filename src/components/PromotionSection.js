@@ -10,7 +10,6 @@ export default class PromotionSection extends React.Component {
         return (
             <section className="content__row content__row--full-width promo__section"  data-id={_.get(section, 'section_id', null)}>
                 <div className="promo">
-                    <Picture {...this.props} image={_.get(section, 'image', null)} alt={_.get(section, 'title', null)} />
                     <div className="promo__message-container" {...(_.get(section, 'background_image', null) ? ({style: toStyleObj('background-image: url(\'' + withPrefix(_.get(section, 'background_image', null)) + '\')')}) : null)}>
                         {_.get(section, 'cta', null) && ((() => {
                             let cta_style = _.get(section, 'cta.style', null) || 'primary';
