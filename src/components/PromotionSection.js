@@ -12,8 +12,6 @@ export default class PromotionSection extends React.Component {
                 <div className="promo">
                     <Picture {...this.props} image={_.get(section, 'image', null)} alt={_.get(section, 'title', null)} />
                     <div className="promo__message-container" {...(_.get(section, 'background_image', null) ? ({style: toStyleObj('background-image: url(\'' + withPrefix(_.get(section, 'background_image', null)) + '\')')}) : null)}>
-                        <h2 className="promo__title">{_.get(section, 'title', null)}</h2>
-                        <p className="promo__subtitle">{_.get(section, 'subtitle', null)}</p>
                         {_.get(section, 'cta', null) && ((() => {
                             let cta_style = _.get(section, 'cta.style', null) || 'primary';
                             return (
